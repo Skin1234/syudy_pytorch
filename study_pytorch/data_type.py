@@ -35,3 +35,17 @@ data = np.ones(2)  #[1. 1.]
 print(data.shape)  #(2,)
 print(data.size()+"+++++")
 print(torch.from_numpy(data))  #tensor([1., 1.], dtype=torch.float64)
+
+q = torch.rand(1,2,3)
+print(q)
+print(q.shape)
+print(q[0])
+print(q.numel())  #占用内存6
+print(q.dim())   #3
+
+
+#numpy-pytorch类型转换
+h = np.array([2,3.3])
+print(torch.from_numpy(a))  #tensor([2.0000, 3.3000], dtype=torch.float64)
+h = np.ones([2,3])
+print(torch.from_numpy(a))  #tensor([[1., 1., 1.],[1., 1., 1.]], dtype=tor4ch.float64)
