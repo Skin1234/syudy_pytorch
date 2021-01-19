@@ -1,5 +1,5 @@
 import  torch
-torch.set_default_tensor_type(torch.FloatTensor)
+
 #+-*/基本运算
 a = torch.rand(3,4)
 b = torch.rand(4)
